@@ -12,7 +12,7 @@ type props = {
   count: number;
 };
 const Model: React.FC<props> = ({ boundary, count }) => {
-  const model = useLoader(GLTFLoader, './models/portal-2.glb');
+  const model = useLoader(GLTFLoader, './models/house-night.glb');
   const [trees, setTrees] = useState<treeType[]>([]);
   const boxIntersect = (
     minAx: number,

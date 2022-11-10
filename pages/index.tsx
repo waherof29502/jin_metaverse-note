@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Canvas } from '@react-three/fiber';
+import { act, Canvas } from '@react-three/fiber';
 // import { AnimatedBox } from '../components';
 import Lights from '../components/Lights';
 import Ground from '../components/Ground';
@@ -13,7 +13,7 @@ import {
 } from '@react-three/drei';
 import { TestModel } from '../components/TestModal';
 import Model from '../components/Model';
-
+import Player from '../components/Player';
 // const TexturedSpheres = () => {
 //   const map = useTexture('./textures/worn_rock_natural_01_diff_1k.png');
 //   // const displacementMap = useTexture(
@@ -62,6 +62,7 @@ const Home: NextPage = () => {
         {/* <TestModel position={[2, 0, 0]} /> */}
         {/* <Ground /> */}
         {/* <Torus /> */}
+        <Player />
       </Canvas>
     </div>
   );
